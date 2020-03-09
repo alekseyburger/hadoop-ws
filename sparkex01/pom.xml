@@ -6,7 +6,7 @@
 
     <groupId>com.github.alekseyburger</groupId>
     <artifactId>sparkex</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>
@@ -14,6 +14,14 @@
             <artifactId>spark-core_2.11</artifactId>
             <version>2.3.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+
     </dependencies>
 
 
@@ -30,27 +38,27 @@
             </plugin>
         </plugins>
 
-        <pluginManagement>
-            <plugins>
+<!--        <pluginManagement>-->
+<!--            <plugins>-->
 
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                        <compilerId>jdt</compilerId>
-                    </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.eclipse.tycho</groupId>
-                            <artifactId>tycho-compiler-jdt</artifactId>
-                            <version>0.21.0</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
+<!--                <plugin>-->
+<!--                    <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                    <configuration>-->
+<!--                        <source>1.8</source>-->
+<!--                        <target>1.8</target>-->
+<!--                        <compilerId>jdt</compilerId>-->
+<!--                    </configuration>-->
+<!--                    <dependencies>-->
+<!--                        <dependency>-->
+<!--                            <groupId>org.eclipse.tycho</groupId>-->
+<!--                            <artifactId>tycho-compiler-jdt</artifactId>-->
+<!--                            <version>0.21.0</version>-->
+<!--                        </dependency>-->
+<!--                    </dependencies>-->
+<!--                </plugin>-->
 
-            </plugins>
-        </pluginManagement>
+<!--            </plugins>-->
+<!--        </pluginManagement>-->
     </build>
 
 </project>

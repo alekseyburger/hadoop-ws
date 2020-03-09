@@ -24,7 +24,7 @@ public class writeExample {
 
         HDFSOperation hDFSOperation = new HDFSOperation(argv[1]);
 
-        String HdfsFilePath = "/test/testing.txt";
+        String HdfsFilePath = "/tmp/testing.txt";
 
         logger.info("Start to write on " + argv[1] + " file " + HdfsFilePath);
         hDFSOperation.write(HdfsFilePath, inpGen);

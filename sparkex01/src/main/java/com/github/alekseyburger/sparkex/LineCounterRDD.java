@@ -12,7 +12,7 @@ public class LineCounterRDD {
     public static void main(String[] argv) {
         SparkConf conf = new SparkConf().setAppName("Line_Count");
         JavaSparkContext ctx = new JavaSparkContext(conf);
-        JavaRDD<String> textLoadRDD = ctx.textFile("/home/alekseyb/spark-2.3.1-bin-hadoop2.7/README.md");
-        System.out.println(textLoadRDD.count());
+        JavaRDD<String> textLoadRDD = ctx.textFile("hdfs://lenovo:9000/tmp/testing.txt");
+        System.out.println("LineCounterRDD: File contais " + textLoadRDD.count() + "lines");
     }
 }

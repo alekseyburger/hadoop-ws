@@ -2,5 +2,6 @@
 *.class
 *.jar
 **/target
-*.log
+*.log*
 **/.idea
+*.iml
